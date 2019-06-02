@@ -1,0 +1,32 @@
+/* This is some default styling for the exercise */
+*,*::after, *::before{
+ box-sizing: border-box;/* Set every element to use the border-box model. */
+}
+.container .block {
+  height: 200px;
+  width: 20%; 
+  
+}
+.container .block:nth-of-type(even) {
+  background-color: #333;
+}
+.container .block:nth-of-type(odd) {
+  background-color: #AAA;
+}
+
+.container{
+ display:flex;
+ flex-wrap: wrap;/* Set up classes for the grid wrapper */
+}
+@media screen and (max-width: 30em){
+ .container{
+
+ flex-direction: column;/* Set up classes for the grid columns. */
+  
+  }
+  .container .block{
+   width:100%;
+
+  }
+  
+}
